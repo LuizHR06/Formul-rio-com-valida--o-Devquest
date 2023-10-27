@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <h1>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+        <div>
+            <form class="form" action="src/js/index.js" method="post">
+                <ul class="inputs">
+                    <li>
+                        <input class="input" type="text" name="name" id="name" placeholder="Nome completo *" required size="28">
+                        <p class="required-input hide">campo obrigatório</p>
+                    </li>
+                    <li>
+                        <input class="input" type="email" name="email" id="email" placeholder="Email *" required size="28">
+                        <p class="required-input hide">campo obrigatório</p>
+                    </li>
+                    <li>
+                        <input class="input" type="tel" name="phone" id="phone" placeholder="Telefone *" required size="28">
+                        <p class="required-input hide">campo obrigatório</p>
+                    </li>
+                    <li>
+                        <textarea class="input" name="msg" id="msg" cols="30" rows="5" placeholder="Mensagem *" required></textarea>
+                        <p class="required-input hide">campo obrigatório</p>
+                    </li>
+                </ul>
+                    <p>*campos obrigatórios</p>
+                    <input class="btn-submit" type="submit" name="send" id="send" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
